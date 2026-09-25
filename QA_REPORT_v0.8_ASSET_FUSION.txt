@@ -1,0 +1,16 @@
+ANIMA SURVIVORS: REBORN v0.8 ASSET FUSION — STATIC QA
+====================================================================
+STATUS: PASS
+NOTE: Godot runtime is not installed in this environment; this is a structural/static QA, not an in-engine runtime certification.
+
+GDScript files: 16
+Shaders: 6
+Textures: 12
+WAV: 12
+Generated GLBs: 4
+  - moss_rock_cluster.glb: 14 objects / 4480 tris
+  - oni_mask_altar.glb: 11 objects / 8820 tris
+  - stone_lantern_premium.glb: 11 objects / 540 tris
+  - torii_premium.glb: 9 objects / 1188 tris
+
+Checked: Android 0.8.0 metadata, Asset Fusion hero/monster slots, animation bridge, facial bridge, skin/hair shaders, generated Japanese setpieces, weapon VFX function references, documentation/provenance manifest, GLB parse integrity.

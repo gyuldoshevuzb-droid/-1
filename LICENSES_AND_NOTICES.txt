@@ -1,0 +1,68 @@
+ANIMA SURVIVORS: REBORN — LICENSES & ASSET PROVENANCE
+Build: v0.18.0 GALAXY A57 CONTROL
+
+PROJECT CONTENT
+All procedural models, shaders, textures, generated GLB set pieces, sound effects, music loops, UI, code and game-design content shipped in this repository were created specifically for this project unless an item is explicitly listed below as third-party content.
+
+The v0.18 repository does not bundle ripped game assets, copyrighted characters, extracted commercial game files, or assets marked "personal use only".
+
+GODOT ENGINE
+This game uses Godot Engine under the MIT License:
+
+Copyright (c) 2014-present Godot Engine contributors.
+Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+APPROVED EXTERNAL ASSET SOURCES FOR FUTURE IMPORT
+These sources are approved by the project pipeline, but their binary assets are not automatically assumed to be bundled. Every imported file must be entered in ASSET_LEDGER.csv before a release build.
+
+1. Poly Haven — CC0 1.0
+   Allowed: commercial use, modification and redistribution.
+   https://polyhaven.com/license
+
+2. Quaternius Universal Animation Library / Universal Animation Library 2 — CC0
+   Allowed: commercial use and retargeting. Standard free CC0 files only.
+   https://quaternius.com/packs/universalanimationlibrary.html
+   https://quaternius.com/packs/universalanimationlibrary2.html
+
+3. Quaternius Universal Base Characters / Modular Character Outfits - Fantasy — CC0
+   Allowed: commercial use, modification and retargeting. Standard free CC0 files only.
+   https://quaternius.com/packs/universalbasecharacters.html
+   https://quaternius.com/packs/modularcharacteroutfitsfantasy.html
+
+4. MakeHuman / MPFB exported character assets — core/export graphics CC0
+   Allowed: commercial games, modification and redistribution of verified CC0 exports.
+   https://static.makehumancommunity.org/about/license.html
+
+5. Quaternius Ultimate Monsters — CC0
+   Allowed: commercial games, modification and redistribution of verified free CC0 pack files.
+   https://quaternius.com/packs/ultimatemonsters.html
+
+POLICY FOR GOOGLE PLAY RELEASES
+- Accept by default: project-original, CC0, MIT, Apache-2.0, BSD-2-Clause, BSD-3-Clause.
+- Attribution-required assets must have their notice included before release.
+- Reject: unclear license, "free download" without license, personal-use-only, editorial-only, ripped/extracted assets, trademarks used as game content without permission, and assets copied from other games.
+- A file is not release-approved merely because it is free of charge.
+
+This notice is included in the in-game Licenses screen.
+
+
+PROJECT-ORIGINAL CONTENT — v0.14 UI icon set
+The hero, weapon and passive SVG icons under assets/ui/icons/ were created specifically for Anima Survivors: Reborn and are approved for inclusion in the commercial game build.

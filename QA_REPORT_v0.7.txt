@@ -1,0 +1,32 @@
+ANIMA SURVIVORS REBORN v0.7 HUMANFORM — STATIC QA
+
+STATUS: PASS
+
+{
+  "scripts": 13,
+  "shaders": 4,
+  "textures": 12,
+  "audio": 12,
+  "character_rig_markers": true,
+  "hero_identity": true,
+  "bone_count": 18,
+  "bone_refs_ok": true,
+  "monster_kinds": true,
+  "monster_anim": true,
+  "environment_meshes": true,
+  "audio_valid": true,
+  "audio_autoload": true,
+  "menu_showcase": true,
+  "pause": true,
+  "impact_system": true,
+  "player_production_rig": true,
+  "enemy_production_rig": true,
+  "fx_refs_ok": true,
+  "class_registry_unique": true,
+  "android_version_0_7": true,
+  "docs_current": true,
+  "environment_refs_ok": true
+}
+
+Validated: delimiter balance, class registry, helper references, Skeleton3D/ArrayMesh skinning channels, stable bone references, four hero identity passes, monster archetypes and enemy animation method, environment mesh integration, WAV integrity, audio autoload, gameplay rigs, 3D menu showcase, pause/mobile pause, impact feedback, FX references, current documentation and Android 0.7 metadata.
+Runtime limitation: this container does not currently include a native Godot executable/export templates or Android SDK, so GPU runtime/export validation and a signed APK are not claimed.

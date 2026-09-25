@@ -1,0 +1,121 @@
+ANIMA SURVIVORS REBORN v0.11 STATIC RELEASE AUDIT
+==========================================================
+PASS core:project.godot 
+PASS core:export_presets.cfg 
+PASS core:scenes/main.tscn 
+PASS core:LICENSES_AND_NOTICES.txt 
+PASS core:ASSET_LEDGER.csv 
+PASS autoload quality manager 
+PASS android mobile renderer 
+PASS android package 
+PASS version 0.11.0 
+PASS version code 12 
+PASS play aab preset 
+PASS mobile-system:scripts/quality_manager.gd 
+PASS mobile-system:shaders/combat_postfx.gdshader 
+PASS mobile-system:shaders/energy.gdshader 
+PASS mobile-system:shaders/armor_layered.gdshader 
+PASS mobile-system:shaders/fabric_micro.gdshader 
+PASS mobile-system:shaders/skin_realistic.gdshader 
+PASS mobile-system:shaders/hair_aniso.gdshader 
+PASS mobile-system:scripts/animation_fusion.gd 
+PASS projectile.gd:paren 
+PASS projectile.gd:bracket 
+PASS projectile.gd:brace 
+PASS character_rig.gd:paren 
+PASS character_rig.gd:bracket 
+PASS character_rig.gd:brace 
+PASS enemy.gd:paren 
+PASS enemy.gd:bracket 
+PASS enemy.gd:brace 
+PASS monster_rig.gd:paren 
+PASS monster_rig.gd:bracket 
+PASS monster_rig.gd:brace 
+PASS main.gd:paren 
+PASS main.gd:bracket 
+PASS main.gd:brace 
+PASS mobile_controls.gd:paren 
+PASS mobile_controls.gd:bracket 
+PASS mobile_controls.gd:brace 
+PASS asset_fusion.gd:paren 
+PASS asset_fusion.gd:bracket 
+PASS asset_fusion.gd:brace 
+PASS audio_manager.gd:paren 
+PASS audio_manager.gd:bracket 
+PASS audio_manager.gd:brace 
+PASS player.gd:paren 
+PASS player.gd:bracket 
+PASS player.gd:brace 
+PASS quality_manager.gd:paren 
+PASS quality_manager.gd:bracket 
+PASS quality_manager.gd:brace 
+PASS environment_meshes.gd:paren 
+PASS environment_meshes.gd:bracket 
+PASS environment_meshes.gd:brace 
+PASS save_system.gd:paren 
+PASS save_system.gd:bracket 
+PASS save_system.gd:brace 
+PASS fx.gd:paren 
+PASS fx.gd:bracket 
+PASS fx.gd:brace 
+PASS asset_provenance.gd:paren 
+PASS asset_provenance.gd:bracket 
+PASS asset_provenance.gd:brace 
+PASS xp_orb.gd:paren 
+PASS xp_orb.gd:bracket 
+PASS xp_orb.gd:brace 
+PASS world_builder.gd:paren 
+PASS world_builder.gd:bracket 
+PASS world_builder.gd:brace 
+PASS animation_fusion.gd:paren 
+PASS animation_fusion.gd:bracket 
+PASS animation_fusion.gd:brace 
+PASS ground.gdshader:paren 
+PASS ground.gdshader:bracket 
+PASS ground.gdshader:brace 
+PASS armor_layered.gdshader:paren 
+PASS armor_layered.gdshader:bracket 
+PASS armor_layered.gdshader:brace 
+PASS foliage.gdshader:paren 
+PASS foliage.gdshader:bracket 
+PASS foliage.gdshader:brace 
+PASS hair_aniso.gdshader:paren 
+PASS hair_aniso.gdshader:bracket 
+PASS hair_aniso.gdshader:brace 
+PASS energy.gdshader:paren 
+PASS energy.gdshader:bracket 
+PASS energy.gdshader:brace 
+PASS fabric_micro.gdshader:paren 
+PASS fabric_micro.gdshader:bracket 
+PASS fabric_micro.gdshader:brace 
+PASS skin_realistic.gdshader:paren 
+PASS skin_realistic.gdshader:bracket 
+PASS skin_realistic.gdshader:brace 
+PASS water.gdshader:paren 
+PASS water.gdshader:bracket 
+PASS water.gdshader:brace 
+PASS combat_postfx.gdshader:paren 
+PASS combat_postfx.gdshader:bracket 
+PASS combat_postfx.gdshader:brace 
+PASS unique class names 
+PASS literal res:// references 
+PASS asset ledger paths 
+PASS no unlogged external binary assets 
+PASS generated:assets/generated/torii_premium.glb 
+PASS generated:assets/generated/stone_lantern_premium.glb 
+PASS generated:assets/generated/moss_rock_cluster.glb 
+PASS generated:assets/generated/oni_mask_altar.glb 
+PASS 12 audio files 
+PASS 12 texture maps 
+PASS Godot MIT notice 
+PASS release asset policy 
+PASS fabric material integration 
+PASS procedural facial expressions 
+PASS boss telegraph windup 
+PASS animation hint cache 
+PASS adaptive material detail 
+PASS adaptive foliage detail 
+PASS debug APK workflow 
+PASS signed AAB workflow 
+
+Result: PASS | checks=117 errors=0 warnings=0

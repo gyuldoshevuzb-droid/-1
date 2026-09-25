@@ -1,0 +1,13 @@
+Anima Survivors: Reborn v0.13.1 LANDSCAPE FIX — QA
+
+PASS  Sensor landscape project setting
+PASS  Expand stretch aspect
+PASS  Orientation autoload
+PASS  Runtime sensor landscape
+PASS  Resume reapply
+PASS  Safe area API
+PASS  APK version 0.13.1
+PASS  Version code 15
+PASS  AAB path 0.13.1
+
+RESULT: 9/9 PASS

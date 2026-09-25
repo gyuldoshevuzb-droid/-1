@@ -1,0 +1,6 @@
+Galaxy A57 19.5:9 virtual layout sanity: PASS
+Reference physical display: 2340x1080 landscape -> 1560x720 virtual canvas with aspect expand.
+Action circles inside bounds: PASS
+Action circles non-overlapping: PASS
+Safe-area layout code present: PASS
+Independent movement/look touch IDs: PASS

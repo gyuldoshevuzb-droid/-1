@@ -1,0 +1,55 @@
+; Anima Survivors: Reborn
+; Godot 4.7+ project · Asset Fusion production branch
+config_version=5
+
+[application]
+config/name="Anima Survivors: Reborn"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+boot_splash/bg_color=Color(0.02, 0.03, 0.05, 1)
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=4
+
+[rendering]
+renderer/rendering_method="forward_plus"
+renderer/rendering_method.mobile="mobile"
+textures/default_filters/use_nearest_mipmap_filter=false
+anti_aliasing/quality/msaa_3d=1
+anti_aliasing/quality/use_debanding=true
+scaling_3d/mode=1
+scaling_3d/scale=0.78
+textures/default_filters/anisotropic_filtering_level=3
+textures/vram_compression/import_etc2_astc=true
+limits/time/time_rollover_secs=3600
+lights_and_shadows/directional_shadow/size=2048
+lights_and_shadows/directional_shadow/size.mobile=1024
+lights_and_shadows/positional_shadow/atlas_size.mobile=1024
+
+[input]
+move_left={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":65),Object(InputEventKey,"physical_keycode":4194311)]}
+move_right={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":68),Object(InputEventKey,"physical_keycode":4194313)]}
+move_up={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":87),Object(InputEventKey,"physical_keycode":4194320)]}
+move_down={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":83),Object(InputEventKey,"physical_keycode":4194322)]}
+dash={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":32),Object(InputEventKey,"physical_keycode":4194325)]}
+ability={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":81)]}
+guard={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":69)]}
+pause={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":4194305)]}
+
+[layer_names]
+3d_physics/layer_1="World"
+3d_physics/layer_2="Player"
+3d_physics/layer_3="Enemy"
+3d_physics/layer_4="Projectile"
+
+[autoload]
+MobileOrientation="*res://scripts/mobile_orientation.gd"
+SaveSystem="*res://scripts/save_system.gd"
+AnimaAudio="*res://scripts/audio_manager.gd"
+AnimaQuality="*res://scripts/quality_manager.gd"

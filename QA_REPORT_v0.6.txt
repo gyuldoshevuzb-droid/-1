@@ -1,0 +1,12 @@
+ANIMA SURVIVORS REBORN v0.6 REALISM - STATIC QA
+=================================================
+GDScript files: 9
+Shader files: 4
+Biome PBR maps: 12
+AnimaFX definitions: 31; calls referenced: 29
+Result: PASS
+- delimiters passed
+- AnimaFX call coverage passed
+- all 12 biome PBR maps present
+- Android 0.6.0 preset retained
+- NOTE: runtime/render validation still requires a Godot executable

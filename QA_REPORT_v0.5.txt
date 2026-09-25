@@ -1,0 +1,14 @@
+Anima Survivors: Reborn v0.5 SPECTACLE — static QA
+
+Checked:
+- GDScript delimiter balance across scripts.
+- Consistent space indentation; no tab-indented GDScript lines.
+- Every AnimaFX call resolves to a declared AnimaFX function.
+- Ability input action exists in project.godot.
+- Anima signal -> HUD hookup exists.
+- Touch ANIMA button -> player ability hookup exists.
+- Styled projectile argument path is connected player -> main -> projectile.
+- Enemy melee wind-up path exists.
+
+Runtime note:
+This environment does not contain a local Godot executable, so a real Godot runtime/import test was not available during this pass. The project targets Godot 4.7.2 stable and keeps Android export configuration in export_presets.cfg.

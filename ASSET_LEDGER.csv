@@ -1,0 +1,8 @@
+asset_path,source,creator,license,commercial_use,redistribution,attribution_required,status,notes
+assets/generated/torii_premium.glb,Project-generated,Anima Survivors project,Project-original,yes,yes,no,APPROVED,Generated specifically for project
+assets/generated/stone_lantern_premium.glb,Project-generated,Anima Survivors project,Project-original,yes,yes,no,APPROVED,Generated specifically for project
+assets/generated/moss_rock_cluster.glb,Project-generated,Anima Survivors project,Project-original,yes,yes,no,APPROVED,Generated specifically for project
+assets/generated/oni_mask_altar.glb,Project-generated,Anima Survivors project,Project-original,yes,yes,no,APPROVED,Generated specifically for project
+assets/audio/*,Project-generated,Anima Survivors project,Project-original,yes,yes,no,APPROVED,Procedurally generated project audio
+assets/textures/*,Project-generated,Anima Survivors project,Project-original,yes,yes,no,APPROVED,Procedurally generated project textures
+assets/ui/icons/*,Project-generated,Anima Survivors project,Project-original,yes,yes,no,APPROVED,Original vector hero/weapon/passive icons created specifically for v0.14
