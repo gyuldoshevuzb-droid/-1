@@ -1,0 +1,130 @@
+name: Build Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  android:
+    name: Build Android APK
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Загружаем проект из репозитория
+      - name: Checkout project
+        uses: actions/checkout@v5
+
+      # 2. Java 17 для Android / Godot
+      - name: Set up Java 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      # 3. Устанавливаем Android SDK
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v4
+        with:
+          packages: "platform-tools platforms;android-35 build-tools;35.0.1 ndk;28.1.13356709"
+          accept-android-sdk-licenses: "true"
+          log-accepted-android-sdk-licenses: "false"
+
+      # 4. Проверяем Android SDK
+      - name: Check Android SDK
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          echo "ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT"
+          sdkmanager --version
+          java -version
+
+      # 5. Проверяем наличие файлов Godot
+      - name: Check Godot project
+        run: |
+          echo "Checking project..."
+          ls -la
+
+          if [ ! -f "project.godot" ]; then
+            echo "ERROR: project.godot not found!"
+            exit 1
+          fi
+
+          if [ ! -f "export_presets.cfg" ]; then
+            echo "ERROR: export_presets.cfg not found!"
+            exit 1
+          fi
+
+          echo "Godot project found."
+
+      # 6. Создаём папку для APK
+      - name: Create build folder
+        run: |
+          mkdir -p build
+
+      # 7. Создаём стандартный debug keystore
+      - name: Create Android debug keystore
+        run: |
+          mkdir -p ~/.android
+
+          if [ ! -f ~/.android/debug.keystore ]; then
+            keytool \
+              -genkeypair \
+              -v \
+              -keystore ~/.android/debug.keystore \
+              -storepass android \
+              -alias androiddebugkey \
+              -keypass android \
+              -keyalg RSA \
+              -keysize 2048 \
+              -validity 10000 \
+              -dname "CN=Android Debug,O=Android,C=US"
+          fi
+
+      # 8. Godot 4.7.2 + Android Export
+      - name: Export Android APK
+        id: godot_export
+        uses: firebelley/godot-export@v8.0.0
+        with:
+          godot_executable_download_url: https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          godot_export_templates_download_url: https://github.com/godotengine/godot-builds/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz
+
+          relative_project_path: ./
+
+          presets_to_export: Android
+
+          export_debug: true
+
+          use_preset_export_path: true
+
+          archive_output: false
+
+          cache: true
+
+          verbose: true
+
+      # 9. Ищем созданный APK
+      - name: Find APK
+        run: |
+          echo "Searching APK..."
+          find . -type f -name "*.apk" -print
+
+          APK_COUNT=$(find . -type f -name "*.apk" | wc -l)
+
+          if [ "$APK_COUNT" -eq 0 ]; then
+            echo "ERROR: APK was not created!"
+            exit 1
+          fi
+
+          echo "APK successfully created."
+
+      # 10. Загружаем APK в GitHub Actions
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: YOKAI-KOKORO-Android-APK
+          path: |
+            **/*.apk
+          if-no-files-found: error
+          retention-days: 30
